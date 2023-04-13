@@ -1,8 +1,10 @@
-x = int(input("введите число X "))
-y = int(input("введите число Y "))
-
-for i in range(x):
-    for j in range(y):
-        if x == i+j and y == i*j:
-            print(f"{x}={i+j} {y}={i*j}")
+from datetime import datetime
+s = int(input("введите число S сумма чисел "))
+p = int(input("введите число P произведение чисел "))
+start_time = datetime.now()
+for i in range(s):
+    for j in range(p):
+        if s == i+j and p == i*j:
+            print(f"{s}={i+j} {p}={i*j}")
             print(f"Возможно это числа {i}, {j}")
+print(datetime.now() - start_time)
