@@ -6,7 +6,7 @@
 #
 count = int(input("введите общее число журавликов S:"))
 # X = S/6
-if (count % 2 == 0):
+if (count % 6 == 0):
     serhio_count = count//6
     print(
         f" {count} -> Петя {serhio_count} Катя {serhio_count*4} Сережа {serhio_count} ")
